@@ -41,4 +41,8 @@ struct UserModel: Codable {
         username = try container.decodeIfPresent(String.self, forKey: .username)
     }
     
+    init(id: Int) {
+        self.id = id
+    }
+    
 }

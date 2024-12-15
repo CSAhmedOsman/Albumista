@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileView" customModule="Albumista" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="sOT-tA-zn8"/>
+                <outlet property="userImageView" destination="Jbd-wH-qd3" id="GjA-mM-Gz6"/>
+                <outlet property="usernameLabel" destination="iyj-Jf-7G9" id="qKp-jf-xdb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-wH-qd3">
+                    <rect key="frame" x="16" y="63" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="2db-nJ-IfW"/>
+                        <constraint firstAttribute="width" secondItem="Jbd-wH-qd3" secondAttribute="height" multiplier="1:1" id="4dc-MS-Rdg"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyj-Jf-7G9">
+                    <rect key="frame" x="129" y="82" width="45" height="26.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jbd-wH-qd3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6Zr-Sh-TQ2"/>
+                <constraint firstItem="iyj-Jf-7G9" firstAttribute="centerY" secondItem="Jbd-wH-qd3" secondAttribute="centerY" id="KkW-LR-PGG"/>
+                <constraint firstAttribute="trailing" secondItem="iyj-Jf-7G9" secondAttribute="trailing" constant="16" id="RR6-WP-Ju9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Jbd-wH-qd3" secondAttribute="bottom" constant="4" id="XR8-yy-FfW"/>
+                <constraint firstItem="Jbd-wH-qd3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="ckX-ZJ-5PW"/>
+                <constraint firstItem="iyj-Jf-7G9" firstAttribute="leading" secondItem="Jbd-wH-qd3" secondAttribute="trailing" constant="4" id="t81-5t-5Nq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="38.931297709923662" y="228.16901408450704"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar" width="580" height="580"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

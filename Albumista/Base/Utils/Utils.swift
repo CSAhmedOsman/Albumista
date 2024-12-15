@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+enum K {
+    enum AppConstants {
+        static var error = "Error"
+    }
+    
+    enum HomeParameter {
+        static var userId = "userId"
+        static var albumId = "albumId"
+    }
+}
